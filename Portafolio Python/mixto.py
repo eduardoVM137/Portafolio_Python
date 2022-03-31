@@ -3,8 +3,17 @@ class Metodosa1:
     from mimetypes import init
 
 
-    def Prueba(self):
-     print("uwuwuuw") 
+    def OrdenarNumeros():
+     print("Ingresar 3 Valores")
+     Numero=[]
+     Numero.append(input("Numero 1: \n"))
+     Numero.append(input("Numero 2: \n"))
+     Numero.append(input("Numero 3: \n"))
+     Numero.sort()
+     print("La Lista se ha ordenado felicidades")
+     print("Numero Menor: "+Numero[0]+"\n Numero Mediano: "+Numero[1]+"\n Numero Mayor: "+Numero[2])
+
+
      
     def Diamante():
         side = 7
@@ -18,7 +27,7 @@ class Metodosa1:
         
     def DescargarVideo():
         from pytube import YouTube
-        link ="https://www.youtube.com/watch?v=5qm8PH4xAss"
+        link =(input("Ingresa el link: \n"))
         yt=YouTube(link)
         yt.streams.filter(only_audio=True)
         stream = yt.streams.get_by_itag(251)
@@ -33,10 +42,10 @@ class Metodosa1:
     Seleccion=(input("\n"))
 
     if Seleccion=="1":
-     print(Prueba())
+     OrdenarNumeros()
     elif Seleccion=="2": 
-        print(Diamante())
+     Diamante()
     elif Seleccion=="3":
-        print(DescargarVideo(2))
+      DescargarVideo()
         
 

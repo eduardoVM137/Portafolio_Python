@@ -13,8 +13,6 @@ def adivina_el_número_computadora(x):
     límite_superior = x
     respuesta = ""
 
-    # Miestras el usuario no indique que la respuesta es correcta,
-    # continuar el proceso.
     while respuesta != "c":
         # Generar predicción
         if límite_inferior != límite_superior:
